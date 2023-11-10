@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .NoteContainer {
+    @apply rounded-[0.3vw] h-[42vh] md:h-[45vh] lg:h-[43vh];
+    @apply dark:bg-d_elements bg-l_elements;
+  }
+  .NoteContainer-noteSection {
+    @apply overflow-y-auto;
+    @apply lg:h-[34vh];
+  }
+  .NoteContainer-panelSection {
+    @apply flex justify-around font-semibold items-center;
+    @apply md:h-[4.2vw] md:text-[1vw] text-[2vw] h-[13vw];
+    @apply text-d_panel;
+  }
+  .NoteContainer-panelSection-s1 {
+    @apply md:dark:hover:text-d_panel_hover md:hover:text-l_text;
+  }
+  .NoteContainer-panelSection-s2 button {
+    @apply mx-[1vw];
+    @apply md:dark:hover:text-d_panel_hover md:hover:text-l_text;
+  }
+  .NoteContainer-panelSection-s3 {
+    @apply dark:hover:text-d_panel_hover hover:text-l_text;
+  }
+}

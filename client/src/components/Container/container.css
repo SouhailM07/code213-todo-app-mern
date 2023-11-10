@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #Container {
+    @apply flex flex-col justify-around bg-transparent m-auto;
+    @apply h-screen lg:w-[40vw] w-[90vw];
+  }
+  #dragAndDrop {
+    @apply grid place-items-center;
+    @apply md:h-[5vw] md:text-[1.2vw] h-[10vw] text-[4vw];
+    @apply text-d_panel;
+  }
+}

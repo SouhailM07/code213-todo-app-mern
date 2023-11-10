@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .check {
+    background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  }
+  .Note {
+    @apply flex items-center justify-evenly;
+    @apply border-b-[0.1vw] md:h-[5vw] h-[13vw];
+    @apply dark:border-b-d_line border-b-l_line;
+  }
+  .Note-circle {
+    @apply grid place-items-center;
+    @apply md:h-[2vw] md:w-[2vw] rounded-[100%] border-[0.2vw] w-[5vw] h-[5vw];
+    @apply dark:border-d_line;
+  }
+  .Note-note {
+    @apply w-[70%] md:text-[1.3vw] text-[3.2vw];
+  }
+  .Note button img {
+    @apply md:h-[1.5vw] h-[3.2vw];
+  }
+}

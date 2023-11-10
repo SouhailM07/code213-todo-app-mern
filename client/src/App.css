@@ -1,0 +1,8 @@
+html {
+  font-size: 13.5px;
+  font-family: "Josefin Sans" !important;
+}
+
+* {
+  transition: 0.3s;
+}

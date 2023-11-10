@@ -1,0 +1,18 @@
+GET http://localhost:3007/
+
+###
+GET http://localhost:3007/todos
+
+###
+POST  http://localhost:3007/todos/addTodo
+Content-Type: application/json
+
+{
+    "note":"be a hero"
+}
+
+###
+PUT http://localhost:3007/todos/doneTodo/65390ca5d27f0509f5269296
+
+### 
+DELETE  http://localhost:3007/todos/deleteTodo/65390d0dcacf43562a68f551
