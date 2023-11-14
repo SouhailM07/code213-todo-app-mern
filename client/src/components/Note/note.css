@@ -8,18 +8,18 @@
   }
   .Note {
     @apply flex items-center justify-evenly;
-    @apply border-b-[0.1vw] md:h-[5vw] h-[13vw];
+    @apply border-b-[0.1rem]  h-[4rem];
     @apply dark:border-b-d_line border-b-l_line;
   }
   .Note-circle {
     @apply grid place-items-center;
-    @apply md:h-[2vw] md:w-[2vw] rounded-[100%] border-[0.2vw] w-[5vw] h-[5vw];
+    @apply h-[2rem] w-[2rem] rounded-[100%] border-[0.2rem];
     @apply dark:border-d_line;
   }
   .Note-note {
-    @apply w-[70%] md:text-[1.3vw] text-[3.2vw];
+    @apply w-[70%] text-[1.3rem];
   }
   .Note button img {
-    @apply md:h-[1.5vw] h-[3.2vw];
+    @apply h-[1.5rem];
   }
 }

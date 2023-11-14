@@ -2,23 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* - Very Light Gray: hsl(0, 0%, 98%); */
-/* - Very Light Grayish Blue: hsl(236, 33%, 92%); */
-/* - Light Grayish Blue: hsl(233, 11%, 84%) */
-/* - Dark Grayish Blue: hsl(236, 9%, 61%) */
-/* - Very Dark Grayish Blue: hsl(235, 19%, 35%) */
-/*  */
-/* dm_bg: "hsl(235, 21%, 11%)", */
-/* veryDarkDesaturatedBlue: "hsl(235, 24%, 19%)", */
-/* lightGrayishBlue: "hsl(234, 39%, 85%)", */
-/* lightGrayishBlue__hover: "hsl(236, 33%, 92%)", */
-/* darkGrayishBlue: "hsl(234, 11%, 52%)", */
-/* veryDarkGrayishBlue: "hsl(233, 14%, 35%)", */
-/* veryDarkGrayishBlue: "hsl(237, 14%, 26%)", */
 @layer components {
   #Input {
     @apply flex-col flex justify-between;
-    @apply md:w-full md:h-[13vw] mt-[4vw] h-[31vw];
+    @apply lg:w-full xs:w-[90vw] h-[13rem] mt-[4rem];
     @apply dark:text-white;
   }
   #Input-title {
@@ -27,27 +14,27 @@
   }
   #Input-title h1 {
     @apply font-semibold;
-    @apply md:text-[2.8vw] text-[8vw];
-    letter-spacing: 1.1vw;
+    @apply text-[2.8rem];
+    letter-spacing: 1.1rem;
   }
 
   #Input-title img {
-    @apply md:h-[2.3vw] h-[6.5vw];
+    @apply h-[2.3rem];
   }
 
   #Input-inputContainer {
     @apply flex items-center justify-evenly;
-    @apply md:h-[5vw] rounded-[0.3vw] h-[13vw];
+    @apply h-[5rem] rounded-[0.3rem];
     @apply dark:bg-d_elements text-l_text bg-l_elements;
   }
   #Input-inputContainer-circle {
     @apply border-2;
-    @apply md:h-[2vw] md:w-[2vw] h-[5vw] w-[5vw] rounded-[100%];
+    @apply h-[2rem] w-[2rem]  rounded-[100%];
     @apply dark:border-d_line;
   }
   #Input input[type="text"] {
     @apply bg-transparent outline-none;
-    @apply w-[79%] h-full md:text-[1.4vw] text-[3.2vw];
+    @apply w-[79%] h-full text-[1.4rem];
     @apply dark:text-d_text;
   }
 }

@@ -29,9 +29,9 @@ export default function Input() {
             type="text"
             name="note"
             placeholder="Create a new todo"
-            onKeyDown={(e: any) => {
+            onKeyDown={async (e: any) => {
               if (e.key === "Enter" && e.target.value.length > 0) {
-                axios.post("http://localhost:3007/todos/addTodo", {
+                await axios.post("http://localhost:3007/todos/addTodo", {
                   note: e.target.value,
                 });
                 e.target.value = "";
