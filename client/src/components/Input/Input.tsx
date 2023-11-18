@@ -31,9 +31,12 @@ export default function Input() {
             placeholder="Create a new todo"
             onKeyDown={async (e: any) => {
               if (e.key === "Enter" && e.target.value.length > 0) {
-                await axios.post("http://localhost:3007/todos/addTodo", {
-                  note: e.target.value,
-                });
+                await axios.post(
+                  "https://code213-todo-app-mern-server.onrender.com/todos/addTodo",
+                  {
+                    note: e.target.value,
+                  }
+                );
                 e.target.value = "";
               }
             }}

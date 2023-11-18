@@ -17,9 +17,11 @@ export default function NotesContainer() {
     return e.done === false;
   });
   useEffect(() => {
-    axios.get("http://localhost:3007/todos").then((res) => {
-      setNotes(res.data.data);
-    });
+    axios
+      .get("https://code213-todo-app-mern-server.onrender.com/todos")
+      .then((res) => {
+        setNotes(res.data.data);
+      });
   }, [notes]);
   //
   let arrOfOptions = ["All", "Active", "Completed"];

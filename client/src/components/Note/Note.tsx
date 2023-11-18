@@ -8,11 +8,15 @@ import axios from "axios";
 
 export default function Note({ note, noteId, done }) {
   let handleCheck = () => {
-    axios.put(`http://localhost:3007/todos/doneTodo/${noteId}`);
+    axios.put(
+      `https://code213-todo-app-mern-server.onrender.com/todos/doneTodo/${noteId}`
+    );
   };
 
   let handleDelete = () => {
-    axios.delete(`http://localhost:3007/todos/deleteTodo/${noteId}`);
+    axios.delete(
+      `https://code213-todo-app-mern-server.onrender.com/todos/deleteTodo/${noteId}`
+    );
   };
 
   // check toggle classes
